@@ -1,0 +1,71 @@
+/* Reset some default styles */
+body, h1, h2, p, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Common styles for both pages */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Login Page Styles */
+#loginForm {
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+label, input, button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Resume Page Styles */
+#resumeContainer {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#prevBtn, #nextBtn, #searchBtn {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#prevBtn:hover, #nextBtn:hover, #searchBtn:hover {
+    background-color: #45a049;
+}
+
+#jobFilter {
+    padding: 10px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    #loginForm, #resumeContainer {
+        max-width: 100%;
+    }
+
+    button, #jobFilter {
+        width: 100%;
+    }
+}
